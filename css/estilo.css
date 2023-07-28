@@ -1,0 +1,81 @@
+/* CSS DEL HEADER */
+.logocarpi{
+    width: 20rem;
+    float: left;
+}
+
+.fondoMarrón{
+    background-color: #fafafa;
+}
+
+header{
+    background-image: url(imagenes/imagenmejoradaheader.jpg);
+    background-position: center;
+    background-size: cover;
+  
+}  
+
+.miNavimg{
+    border-radius: 5px;
+    background-color: hwb(0 98% 2% / 0.275);
+    box-shadow: 0px 5px 20px rgb(0, 0, 0 , 100);
+    margin-right: 11%;
+}
+
+.miNav{
+    
+    
+    border-radius: 5px;
+    background-color: hwb(0 98% 2% / 0.275);
+    box-shadow: 0px 5px 20px rgb(0, 0, 0 , 100);
+   
+    
+    
+    
+}
+.miNav a{
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    
+}
+.inicioNav a{
+    color: rgb(255, 255, 255);
+    
+}
+
+
+/* CSS DEL FOOTER */
+
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+    
+}
+footer li{
+    list-style: none;
+}
+footer a{
+    color: black;
+    text-decoration: none;
+    
+    
+}
+.linksFooter {
+    grid-column: 1 / span 3;
+    
+}
+.linkDiv{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+
+
+.copy{
+    grid-column: 1 / span 3;
+}
+
+

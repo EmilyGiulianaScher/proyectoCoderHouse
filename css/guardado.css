@@ -1,0 +1,216 @@
+
+body {
+    background-color: rgb(233, 242, 242);
+    font-family: 'PT Serif', serif;
+}
+
+
+/*  Organización del Header */
+
+header img{
+    width: 100%;
+    height: 250px;
+    
+} 
+
+.navegacion {
+    background-color: rgb(124, 153, 151);
+    opacity: 95%;
+    width: 100%;
+    height: 21%;
+    display: flex;
+    justify-content: space-between;
+    /* Añade espacio entre los elementos de la lista */
+    align-items: center;
+    /* Centra verticalmente los elementos en el contenedor */
+    position: fixed;
+    top: 1%;
+    left: 0.5%;
+    right: 1%;
+
+
+}
+
+.navegacion img {
+    width: 23%;
+    height: auto;
+}
+
+.ulFlex {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    flex: 1;
+    /* Ocupa todo el espacio disponible dentro del contenedor */
+    display: flex;
+    /* Alinea horizontalmente los elementos de la lista */
+    justify-content: flex-end;
+    /* Alinea los elementos al final del contenedor */
+
+
+
+}
+
+.ulFlex li {
+    margin-left: 3%;
+    background-color: rgb(233, 242, 242);
+    height: auto;
+    width: auto;
+    border: 20px rgb(191, 108, 67);
+    border-radius: 4px;
+    padding: 10px;
+    
+}
+
+.ulFlex li:first-child {
+    margin-left: 0;
+}
+
+.ulFlex li:last-child {
+    margin-right: 3%;
+}
+
+.ulFlex a {
+    text-decoration: none;
+    color: black;
+}
+
+/* FIN DE ORGANIZACIÓN DEL HEADER */
+
+
+
+
+
+
+/* ORGANIZACIÓN DEL MAIN */
+
+main {
+    margin-top: 20%;
+}
+
+.maderas-que-utilizamos{
+    padding: 2%;
+    
+}
+
+.MaderasMain{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    
+}
+
+.FotosDeProductosMain{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    background-color: #BF6C43;
+    margin-left: 1%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.FotosDeProductosMain img{
+    width: 90%;
+    height: auto;
+    margin-top: 10%;
+    
+}
+
+.FotosDeProductosMain p{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 150%;
+}
+.FotosDeProductosMain a{
+    text-decoration: none;
+    color: black;
+    background-color: #873C17;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+
+
+
+footer {
+    background-color: #BF6C43;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    padding: auto;
+    position: relative;
+    justify-content: space-around;
+    font-size: 15px;
+
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.linksFooter {
+    width: 50%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.divLinks {
+    list-style: none;
+    display: flex;
+    margin-left: 2%;
+    padding: 5px;
+}
+
+.divLinks li {
+    margin: 0 7px;
+}
+
+.divLinks a {
+    background-color: #873C17;
+    padding: 3px 16px; /* Ajusta el padding para aplicar el color solo al espacio cercano a las palabras */
+    color: black;
+    text-decoration: none;
+}
+
+#final {
+    background-color: #873C17;
+    text-align: left;
+    margin-left: 1%;
+    margin-top: auto;
+    padding: 2px;
+    width: 100%;
+}
+
+.ahce6 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
