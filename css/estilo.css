@@ -1,68 +1,55 @@
 /* CSS DEL BODY*/
-
-
-
+body {
+    background-color: #ffffff;
+}
 
 /* CSS DEL HEADER */
-header{
+header {
     background-image: url(imagenes/imagenmejoradaheader.jpg);
     background-position: center;
     background-size: cover;
-    width: 100;
-   
-   
-}  
 
-.logocarpi{
+}
+
+.logocarpi {
     width: 13rem;
     float: left;
 }
 
-/* .fondoMarrón{
-    background-color: #fafafa;
-} */
-.navbarra{
-     display: block;
-     width: 100%;
-     margin: 0% auto;
-}
-
-
-.miNavimg{
-    /* border-radius: 5px;
-    background-color: hwb(0 98% 2% / 0.275);
-    box-shadow: 0px 5px 20px rgb(0, 0, 0 , 100); */
+.miNavimg {
     width: 100px;
-    /* height: 150px; */
     margin-right: 11%;
 }
 
- .navbarra{
+.navbarra {
 
     display: flex;
     flex-direction: row;
     padding: auto;
     border-radius: 5px;
     background-color: hwb(0 98% 2% / 0.275);
-    box-shadow: 0px 0px 10px rgb(0, 0, 0 , 50);
- }
-.miNav a{
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 50);
+
+}
+
+.miNav a {
 
     text-transform: uppercase;
     color: rgb(255, 255, 255);
     font-size: 15px;
-    /* margin-left: 60px; */
     position: relative;
     float: right;
- 
-    
+
+
+
 }
-nav ul{
+
+nav ul {
     margin: 0;
     padding: 0;
 }
 
-nav li{
+nav li {
     display: inline-block;
     margin-left: 60px;
     margin-bottom: 35px;
@@ -70,10 +57,12 @@ nav li{
     position: relative;
 }
 
-nav a:hover{
+nav a:hover {
     color: #9b9494;
+
 }
-nav a::before{
+
+nav a::before {
     content: "";
     display: block;
     height: 5px;
@@ -82,101 +71,166 @@ nav a::before{
     position: relative;
     width: 0px;
     transition: all ease-in-out 1000ms;
-    }
-    
-    nav a:hover::before{
-      width: 100%;
-      
-    }
-
-
-
-
-/*CSS DE LAS CARDS*/
-
-.ConjuntoDeCards{
-  
-    margin-top: 40px; 
-    margin-bottom: 20px;  
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
 }
 
-.card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    background-color: #e6e6e6;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgb(0, 0, 0 , 0.5);
-  
-}
-
-.card:hover{
-  background-color: #9b9494;
-  }
-  
-  .card::before{
-  content: "";
-  /* display: block; */
-  width: 200%;
-  transition: all ease-in-out 1000ms;
-  }
-  
-  .card:hover::before{
+nav a:hover::before {
     width: 100%;
-    
-  }
 
-.card img{
-    width: 100%;
-    height: 200px;
-    object-fit:contain;
+}
+
+
+
+/* css del main*/
+
+/* CARRUSEL */
+.miCarro {
+    max-height: 325px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.5);
+    border-bottom: 10px;
+    max-width: 900px;
+}
+
+.miCarro img {
+    max-height: 325px;
     border-radius: 5px;
+    background-size: cover;
 }
 
-.boton{
-    background-color: rgb(245, 163, 11);
-    box-shadow: 0px 0px 8px rgb(0, 0, 0 , 0.5);
-    align-items: center;
+.carruselTxt {
+    max-height: 90px;
+    margin-bottom: 10px;
+
 }
+
+
+.textShadowTitulo {
+    background-color: rgba(245, 222, 179, 0.6);
+    color: black;
+    text-decoration: solid;
+    border-radius: 5px;
+    font-size: 90%;
+}
+
+.textShadow {
+    background-color: rgba(245, 222, 179, 0.6);
+    color: black;
+    text-decoration: solid;
+    border-radius: 5px;
+    font-size: 80%;
+
+}
+
+.carruselBoton {
+    background-color: rgba(255, 235, 205, 0.142);
+    border-radius: 20px;
+}
+
+/* MAP CSS*/
+
+.googleMap {
+    background-color: rgb(123, 89, 26);
+    border-radius: 10px;
+
+}
+
+.mapTxt {
+    justify-content: center;
+    color: azure;
+    text-align: center;
+}
+
+
+
+
 
 
 
 /* CSS DEL FOOTER */
-
-
-footer{
-    display: grid;
-    grid-template-columns: repeat(3,3fr);
-    
+footer {
+    background-color: rgba(165, 98, 55, 0.676);
 }
-footer li{
-    list-style: none;
-}
-footer a{
+
+footer a {
     color: black;
     text-decoration: none;
-    
-    
+
 }
-.linksFooter {
-    grid-column: 1 / span 3;
-    
-}
-.linkDiv{
+
+.linkDiv {
     display: flex;
-    justify-content: space-around;
-    
+    list-style: none;
+    justify-content: space-evenly;
+    margin-right: 7px;
+
+}
+
+.linkDiv a {
+    background-color: rgba(151, 106, 42, 0.482);
+}
+
+.seccionFooter {
+    justify-content: space-evenly;
+
+}
+
+.copy {
+    margin-left: 2%;
 }
 
 
 
 
-.copy{
-    grid-column: 1 / span 3;
+/* CSS DE LA SECCION PRODUCTOS  */
+
+.NuestrosProductosTexto {
+    text-align: center;
+    color: #b47c48;
+    background-color: #ffffff4f;
+    text-transform: uppercase;
+    font-size: 20px;
+
 }
 
 
+.productosCajas {
+
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+
+
+
+}
+
+.productosCajasTexto {
+    text-decoration: underline;
+}
+
+.productosImg {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.card:hover {
+
+    transition-property: all;
+    transition-duration: 50ms;
+    transition-timing-function: ease-in;
+    transform: translateY(-3%);
+
+
+}
+
+.col button {
+    background-color: rgb(255, 123, 0);
+    box-shadow: 0px 2px 3px rgb(0, 0, 0, 0.5);
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+.col button:hover {
+    background-color: rgb(139, 78, 20);
+    transition-duration: 2s;
+}
