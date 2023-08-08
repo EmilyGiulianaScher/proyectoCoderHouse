@@ -1,6 +1,141 @@
 @charset "UTF-8";
-body {
+.contactitoSinImg {
+  background-color: rgb(179, 174, 172);
+}
+.contactitoSinImg h2 {
+  color: #ffffff;
+  font-style: italic;
+  text-align: center;
+}
+.contactitoSinImg .contactitoSinImgDivision {
+  color: #fff;
+  margin-top: 60px;
+  border-style: double;
+}
+.contactitoSinImg .contactitoSinImgDivision p {
+  text-align: center;
+}
+
+.contactoImg {
+  max-width: 100%;
+  display: block;
+  margin-right: 0%;
+}
+
+.ui-card {
+  width: 350px;
+  background: radial-gradient(#111 50%, #000 100%);
+  overflow: hidden;
+  position: relative;
+}
+.ui-card img {
+  transform: scale(1.3);
+  transition: all 0.3s ease-out;
+}
+.ui-card img:hover {
+  transform: scale(1.1) translateY(-20px);
+  opacity: 0.3;
+}
+.ui-card .contactoDescripcion {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 12px;
+}
+.ui-card .contactoDescripcion h2 {
+  font-weight: 700;
+  font-size: 32px;
+  margin: 0 0 20px;
+  transform: translateY(30px);
+  opacity: 0.3;
+  transition: all 0.3s ease-out;
+}
+.ui-card .contactoDescripcion p {
+  transform: translateY(30px);
+  opacity: 0.3;
+  transition: all 0.3s ease-out;
+}
+.ui-card .contactoDescripcion li {
+  transform: translateY(30px);
+  opacity: 0.3;
+  transition: all 0.3s ease-out;
+}
+.ui-card .contactoDescripcion a {
+  color: #fff;
+  background: #412a20;
+  display: inline-block;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  transform: translateY(30px);
+  opacity: 0.3;
+  transition: all 0.3s ease-out 0.4s;
+}
+.ui-card .contactoDescripcion a:hover {
+  background: #996a3e;
+}
+.ui-card:hover .contactoDescripcion h2 {
+  transform: translateY(0);
+  opacity: 1;
+}
+.ui-card:hover .contactoDescripcion p {
+  transform: translateY(0);
+  opacity: 1;
+}
+.ui-card:hover .contactoDescripcion li {
+  transform: translateY(0);
+  opacity: 1;
+}
+.ui-card:hover .contactoDescripcion a {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+main .NuestrosProductosTexto {
+  text-align: center;
+  color: #996a3e;
+  text-transform: uppercase;
+  font-size: 1.6em;
+}
+main .NuestrosProductossubtitulo {
+  text-align: center;
+  color: #b47c48;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+main .productosCajas {
   background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+}
+main .productosCajasTexto {
+  text-decoration: none;
+}
+main .productosImg {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+main .card:hover {
+  transition-property: all;
+  transition-duration: 50ms;
+  transition-timing-function: ease-in-out;
+  transform: translateY(-3%);
+}
+main .col button {
+  background-color: rgb(255, 123, 0);
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  color: #ffffff;
+}
+main .col button:hover {
+  background-color: rgb(139, 78, 20);
+  transition-duration: 0.5s;
 }
 
 header {
@@ -47,52 +182,156 @@ header .miNav a::before {
 header .miNav a:hover::before {
   width: 100%;
 }
-
-main {
+header nav ul {
+  display: flex;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
 }
-main .miCarro {
-  max-height: 325px;
+header nav ul li {
+  display: block;
+  margin-left: 60px;
+  margin-bottom: 35px;
+  padding-top: 23px;
+  position: relative;
+  transition: 0.5s;
+}
+header nav ul li ul:hover li {
+  filter: blur(0px);
+}
+header nav ul ul li:hover {
+  filter: blur(3px);
+}
+
+footer {
+  background-color: rgba(165, 98, 55, 0.676);
+}
+footer a {
+  color: black;
+  text-decoration: none;
+}
+footer .linkDiv {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  background-color: #996a3e;
+}
+
+/* CARRUSEL */
+.miCarro {
+  max-width: 1200px;
+  margin: auto; /* Centrar el carrusel horizontalmente */
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
   border-bottom: 10px;
-  max-width: 900px;
 }
-main .miCarro img {
+.miCarro .carousel-inner img {
+  width: 100%;
   max-height: 325px;
+  object-fit: cover; /* Ajustar la imagen manteniendo la proporción */
   border-radius: 5px;
-  background-size: cover;
 }
-main .carruselTxt {
+
+.carruselTxt {
   max-height: 90px;
-  margin-bottom: 10px;
 }
-main .textShadowTitulo {
-  background-color: rgba(245, 222, 179, 0.6);
+
+.textShadowTitulo, .textShadow {
+  background-color: rgba(230, 197, 137, 0.842);
   color: black;
   text-decoration: solid;
   border-radius: 5px;
-  font-size: 90%;
+  margin-bottom: 2px;
 }
-main .textShadow {
-  background-color: rgba(245, 222, 179, 0.6);
-  color: black;
-  text-decoration: solid;
-  border-radius: 5px;
-  font-size: 80%;
-}
-main .carruselBoton {
+
+.carruselBoton {
   background-color: rgba(255, 235, 205, 0.142);
   border-radius: 20px;
 }
-main .googleMap {
+
+.productos-destacados-titulo {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.producto-card {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+.producto-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.producto-card .producto-titulo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+.producto-card .producto-descripcion {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+.producto-card .btn-comprar {
+  background-color: #25d366;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.producto-card .btn-comprar:hover {
+  background-color: #198843;
+}
+
+@media (min-width: 768px) {
+  .row-cols-md-3 {
+    flex-wrap: nowrap;
+  }
+}
+@media (max-width: 767px) {
+  .row-cols-md-3 {
+    flex-wrap: wrap;
+  }
+  .col {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+.producto-card .producto-imagen {
+  width: 100%;
+  height: 150px;
+  /* Establece la altura fija deseada */
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.googleMap {
   background-color: rgb(123, 89, 26);
   border-radius: 10px;
 }
-main .googleMap .mapTxt {
+.googleMap .mapTxt {
   justify-content: center;
   color: azure;
   text-align: center;
 }
-main .btn-wsp {
+
+/* wasap boton */
+.btn-wsp {
   position: fixed;
   width: 60px;
   height: 60px;
@@ -108,69 +347,67 @@ main .btn-wsp {
   z-index: 100;
   transition: all 300ms ease;
 }
-main .btn-wsp:hover {
+.btn-wsp:hover {
   background: #20ba5a;
 }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
-  main .btn-wsp {
+  .btn-wsp {
     width: 63px;
     height: 63px;
     line-height: 66px;
   }
 }
-main .centradoDeBotón {
-  display: block;
-  margin: auto;
-}
-main .testimonios {
+
+/* css de los testimonios*/
+.testimonios {
   text-align: center;
 }
-main .testimonios .testimonio-card {
+.testimonios .testimonio-card {
   padding: 20px;
   border: 2px solid #ccc;
   border-radius: 10px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
 }
-main .testimonios .testimonio-card img {
+.testimonios .testimonio-card img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   margin: auto 10px;
   display: block;
 }
-main .testimonios .testimonio-card .testimonio-texto {
+.testimonios .testimonio-card .testimonio-texto {
   font-style: italic;
   font-size: 16px;
   line-height: 1.6;
   color: #555;
 }
-main .testimonios .testimonio-card .testimonio-nombre {
+.testimonios .testimonio-card .testimonio-nombre {
   font-weight: bold;
   color: #333;
 }
 @media (min-width: 992px) {
-  main .testimonios .row-cols-md-3 {
+  .testimonios .row-cols-md-3 {
     flex-wrap: nowrap;
   }
 }
 @media (min-width: 504px) and (max-width: 650px) {
-  main .testimonios .row-cols-md-3 {
+  .testimonios .row-cols-md-3 {
     flex-wrap: wrap;
   }
-  main .testimonios .col {
+  .testimonios .col {
     flex-basis: 100%;
     max-width: 100%;
   }
 }
-main .testimonios .testimonios-titulo {
+.testimonios .testimonios-titulo {
   text-align: center;
   font-size: 20px;
   font-weight: bold;
   color: #333;
   margin-bottom: 20px;
 }
-main .testimonios img {
+.testimonios img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -180,107 +417,15 @@ main .testimonios img {
   box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
-main .testimonios img:hover {
+.testimonios img:hover {
   transform: scale(1.1);
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
 }
 @media (min-width: 768px) {
-  main .testimonios img {
+  .testimonios img {
     width: 100px;
     height: 100px;
   }
-}
-main .productos-destacados-titulo {
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 20px;
-}
-main .producto-card {
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  height: 100%;
-}
-main .producto-card img {
-  width: 100%;
-  max-height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-main .producto-card .producto-titulo {
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 10px;
-}
-main .producto-card .producto-descripcion {
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 15px;
-}
-main .producto-card .btn-comprar {
-  background-color: #25d366;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 8px 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-main .producto-card .btn-comprar:hover {
-  background-color: #20ba5a;
-}
-@media (min-width: 768px) {
-  main .row-cols-md-3 {
-    flex-wrap: nowrap;
-  }
-}
-@media (max-width: 767px) {
-  main .row-cols-md-3 {
-    flex-wrap: wrap;
-  }
-  main .col {
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-}
-main .producto-card .producto-imagen {
-  width: 100%;
-  height: 150px;
-  /* Establece la altura fija deseada */
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-footer {
-  background-color: rgba(165, 98, 55, 0.676);
-}
-footer a {
-  color: black;
-  text-decoration: none;
-}
-footer .linkDiv {
-  display: flex;
-  list-style: none;
-  justify-content: space-evenly;
-  margin-right: 7px;
-}
-footer .linkDiv a {
-  background-color: rgba(151, 106, 42, 0.482);
-}
-footer .seccionFooter {
-  justify-content: space-evenly;
-}
-footer .copy {
-  margin-left: 2%;
 }
 
 /*# sourceMappingURL=estilo.css.map */
