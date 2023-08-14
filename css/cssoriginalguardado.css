@@ -1,0 +1,575 @@
+/* CSS DEL BODY*/
+body {
+    background-color: #ffffff;
+}
+
+/* CSS DEL HEADER */
+header {
+    background-image: url(imagenes/imagenmejoradaheader.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.logocarpi {
+    width: 13rem;
+    float: left;
+}
+
+.miNavimg {
+    width: 100px;
+    margin-right: 11%;
+}
+
+.navbarra {
+
+    display: flex;
+    flex-direction: row;
+    padding: auto;
+    border-radius: 5px;
+    background-color: hwb(0 98% 2% / 0.275);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 50);
+
+}
+
+.miNav a {
+
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    position: relative;
+    float: right;
+
+
+
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 60px;
+    margin-bottom: 35px;
+    padding-top: 23px;
+    position: relative;
+}
+
+nav a:hover {
+    color: #9b9494;
+
+}
+
+nav a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #412a20;
+    position: relative;
+    width: 0px;
+    transition: all ease-in-out 1000ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+
+}
+
+
+
+/* css del main*/
+
+/* CARRUSEL */
+.miCarro {
+    max-height: 325px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.5);
+    border-bottom: 10px;
+    max-width: 900px;
+}
+
+.miCarro img {
+    max-height: 325px;
+    border-radius: 5px;
+    background-size: cover;
+}
+
+.carruselTxt {
+    max-height: 90px;
+    margin-bottom: 10px;
+
+}
+
+
+.textShadowTitulo {
+    background-color: rgba(245, 222, 179, 0.6);
+    color: black;
+    text-decoration: solid;
+    border-radius: 5px;
+    font-size: 90%;
+}
+
+.textShadow {
+    background-color: rgba(245, 222, 179, 0.6);
+    color: black;
+    text-decoration: solid;
+    border-radius: 5px;
+    font-size: 80%;
+
+}
+
+.carruselBoton {
+    background-color: rgba(255, 235, 205, 0.142);
+    border-radius: 20px;
+}
+
+/* MAP CSS*/
+
+.googleMap {
+    background-color: rgb(123, 89, 26);
+    border-radius: 10px;
+
+}
+
+.mapTxt {
+    justify-content: center;
+    color: azure;
+    text-align: center;
+}
+
+/* wasap boton */
+
+.btn-wsp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    bottom: 25px;
+    right: 25px;
+    background: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 35px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    transition: all 300ms ease;
+}
+
+.btn-wsp:hover {
+    background: #20ba5a;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .btn-wsp {
+        width: 63px;
+        height: 63px;
+        line-height: 66px;
+    }
+}
+
+
+
+
+
+/* sección productos */
+.centradoDeBotón {
+    display: block;
+    margin: auto;
+}
+
+/* css de los testimonios*/
+.testimonios {
+    text-align: center;
+}
+
+.testimonio-card {
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+.testimonio-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: auto 10px;
+    display: block;
+}
+
+.testimonio-texto {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.testimonio-nombre {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 992px) {
+    .row-cols-md-3 {
+        flex-wrap: nowrap;
+    }
+}
+
+/* Estilos para pantallas medianas */
+@media (min-width: 504px) and (max-width: 650px) {
+    .row-cols-md-3 {
+        flex-wrap: wrap;
+    }
+
+    .col {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Estilos para el título de los testimonios */
+.testimonios-titulo {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilos para las fotos de perfil */
+.testimonio-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: block;
+    border: 3px solid #fff;
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.testimonio-card img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Estilos para pantallas medianas y más grandes */
+@media (min-width: 768px) {
+    .testimonio-card img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+/* productos destacados del main */
+/* Estilos para la sección de Productos Destacados */
+.productos-destacados-titulo {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.producto-card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.producto-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.producto-titulo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.producto-descripcion {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.btn-comprar {
+    background-color: #25d366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-comprar:hover {
+    background-color: #20ba5a;
+}
+
+/* Estilos para pantallas medianas y más grandes */
+@media (min-width: 768px) {
+    .row-cols-md-3 {
+        flex-wrap: nowrap;
+    }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+    .row-cols-md-3 {
+        flex-wrap: wrap;
+    }
+
+    .col {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Estilos para las fotos de perfil */
+.producto-card .producto-imagen {
+    width: 100%;
+    height: 150px;
+    /* Establece la altura fija deseada */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* CSS DEL FOOTER */
+footer {
+    background-color: rgba(165, 98, 55, 0.676);
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+
+}
+
+.linkDiv {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    margin-right: 7px;
+
+}
+
+.linkDiv a {
+    background-color: rgba(151, 106, 42, 0.482);
+}
+
+.seccionFooter {
+    justify-content: space-evenly;
+
+}
+
+.copy {
+    margin-left: 2%;
+}
+
+
+
+
+/* CSS DE LA SECCION PRODUCTOS  */
+
+.NuestrosProductosTexto {
+    text-align: center;
+    color: #996a3e;
+    text-transform: uppercase;
+    font-size: 1.6em;
+
+
+}
+
+.NuestrosProductossubtitulo {
+    text-align: center;
+    color: #b47c48;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+
+}
+
+.productosCajas {
+
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+
+
+
+}
+
+.productosCajasTexto {
+    text-decoration: underline;
+}
+
+.productosImg {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.card:hover {
+
+    transition-property: all;
+    transition-duration: 50ms;
+    transition-timing-function: ease-in;
+    transform: translateY(-3%);
+
+
+}
+
+.col button {
+    background-color: rgb(255, 123, 0);
+    box-shadow: 0px 2px 3px rgb(0, 0, 0, 0.5);
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+.col button:hover {
+    background-color: rgb(139, 78, 20);
+    transition-duration: 2s;
+}
+
+
+/* CSS DE LA SECCION CONTACTO */
+
+.contactitoSinImg {
+    background-color: rgb(179, 174, 172);
+
+}
+
+.contactitoSinImg h2 {
+
+    color: #ffffff;
+    font-style: italic;
+    text-align: center;
+}
+
+.contactitoSinImgDivision {
+
+    color: #FFF;
+    margin-top: 60px;
+    border-style: double;
+}
+
+.contactitoSinImgDivision p {
+
+    text-align: center;
+
+}
+
+.contactoImg {
+    max-width: 100%;
+    display: block;
+    margin-right: 0%;
+}
+
+.ui-card {
+    width: 350px;
+    background: radial-gradient(#111 50%, #000 100%);
+    overflow: hidden;
+    position: relative;
+}
+
+.ui-card img {
+
+    transform: scale(1.3);
+    transition: all 0.3s ease-out;
+
+}
+
+.ui-card:hover img {
+    transform: scale(1.1) translateY(-20px);
+    opacity: 0.3;
+}
+
+.contactoDescripcion {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 12px;
+
+}
+
+.contactoDescripcion h2 {
+    font-weight: 700;
+    font-size: 32px;
+    margin: 0 0 20px;
+    transform: translateY(30px);
+    opacity: 0.3;
+    transition: all 0.3s ease-out;
+}
+
+.contactoDescripcion p {
+    transform: translateY(30px);
+    opacity: 0.3;
+    transition: all 0.3s ease-out;
+}
+
+.contactoDescripcion li {
+    transform: translateY(30px);
+    opacity: 0.3;
+    transition: all 0.3s ease-out;
+}
+
+.contactoDescripcion a {
+    color: #fff;
+    background: #412a20;
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    transform: translateY(30px);
+    opacity: 0.3;
+    transition: all 0.3s ease-out 0.4s;
+}
+
+.contactoDescripcion a:hover {
+    background: #996a3e;
+
+}
+
+.ui-card:hover .contactoDescripcion h2 {
+
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.ui-card:hover .contactoDescripcion p {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.ui-card:hover .contactoDescripcion li {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.ui-card:hover .contactoDescripcion a {
+    transform: translateY(0);
+    opacity: 1;
+}
