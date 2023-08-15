@@ -2,16 +2,7 @@ header {
   background-image: url(imagenes/imagenmejoradaheader.jpg);
   background-position: center;
   background-size: cover;
-
-  .logocarpi {
-    width: 13rem;
-    float: left;
-  }
-
-  .miNavimg {
-    width: 100px;
-    margin-right: 11%;
-  }
+}
 
   .navbarra {
     display: flex;
@@ -19,21 +10,60 @@ header {
     padding: auto;
     border-radius: 5px;
     background-color: hwb(0 98% 2% / 0.275);
-    box-shadow: 0px 0px 10px rgb(0, 0, 0, 50);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+    .logocarpi {
+      width: 13rem;
+      float: left;
+    }
+
+    .miNavimg {
+      width: 100px;
+      margin-right: 11%;
+    }
   }
 
-  .miNav a {
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
-    font-size: 15px;
-    position: relative;
-    float: right;
+  .miNav {
+    a {
+      text-transform: uppercase;
+      color: rgb(255, 255, 255);
+      font-size: 15px;
+      position: relative;
+      float: right;
+    }
+  }
 
-    &:hover {
+  nav {
+    ul {
+      display: flex;
+      gap: 2.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      display: block;
+      margin-left: 60px;
+      margin-bottom: 35px;
+      padding-top: 23px;
+      position: relative;
+      transition: 0.5s;
+    }
+
+      ul:hover li{
+        filter: blur(1px);
+      }
+    
+    
+
+    ul li:hover{
+      filter: blur(0px);
+    }
+    a:hover {
       color: #9b9494;
     }
 
-    &::before {
+    a::before {
       content: "";
       display: block;
       height: 5px;
@@ -44,32 +74,8 @@ header {
       transition: all ease-in-out 1000ms;
     }
 
-    &:hover::before {
+    a:hover::before {
       width: 100%;
     }
   }
 
-  nav ul {
-    display: flex;
-    gap: 2.5rem;
-    margin: 0;
-    padding: 0;
-
-    li {
-      display: block;
-      margin-left: 60px;
-      margin-bottom: 35px;
-      padding-top: 23px;
-      position: relative;
-      transition: 0.5s;
-
-       ul:hover li{
-        filter: blur(0px);
-      }
-    }
-
-     ul li:hover {
-      filter: blur(3px);
-    }
-  }
-}
