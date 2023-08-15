@@ -1,9 +1,11 @@
 /* CARRUSEL */
+
 .miCarro {
   max-width: 1200px;
   margin: auto; /* Centrar el carrusel horizontalmente */
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
   border-bottom: 10px;
+ 
   
   
   .carousel-inner {
@@ -21,8 +23,8 @@
 }
 
 .textShadowTitulo, .textShadow {
-  background-color: rgba(230, 197, 137, 0.842);
-  color: black;
+  background-color: rgba(115, 60, 24, 0.452);
+  color: rgb(239,227,193);
   text-decoration: solid;
   border-radius: 5px;
   margin-bottom: 2px;
