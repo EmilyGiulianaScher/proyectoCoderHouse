@@ -1,18 +1,19 @@
 /* CARRUSEL */
-
 .miCarro {
   max-width: 1200px;
-  margin: auto; /* Centrar el carrusel horizontalmente */
+  margin: auto;
+  /* Centrar el carrusel horizontalmente */
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
   border-bottom: 10px;
- 
-  
-  
+
+
+
   .carousel-inner {
     img {
       width: 100%;
       max-height: 325px;
-      object-fit: cover; /* Ajustar la imagen manteniendo la proporción */
+      object-fit: cover;
+      /* Ajustar la imagen manteniendo la proporción */
       border-radius: 5px;
     }
   }
@@ -22,13 +23,18 @@
   max-height: 90px;
 }
 
-.textShadowTitulo, .textShadow {
+.textShadowTitulo,
+.textShadow {
   background-color: rgba(115, 60, 24, 0.452);
-  color: rgb(239,227,193);
+  color: rgb(239, 227, 193);
   text-decoration: solid;
   border-radius: 5px;
   margin-bottom: 2px;
-  
+
+  @media screen and (max-width: 588px) {
+    font-size: 12px; // Ajusta el tamaño de fuente para pantallas más pequeñas
+  }
+
 }
 
 .carruselBoton {

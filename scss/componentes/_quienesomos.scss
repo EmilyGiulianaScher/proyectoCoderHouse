@@ -1,28 +1,43 @@
 .cajaQuienesSomos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: space-evenly;
-    gap: 15px;
-  
-    .QuienesSomos1 {
-      background-color: #9b94944d;
-      color: #FFF;
-      border-radius: 5px;
-      box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
-    }
-  
-    .QuienesSomos2 {
-      background-color: #967a6e80;
-    }
-  
-    .QuienesSomos3 {
-      background-color: #967a6e80;
-    }
-  
-    .QuienesSomos4 {
-      background-color: #b66c0ca9;
-      margin-top: 10px;
-    }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+  gap: 15px;
+}
+
+.QuienesSomos {
+  background-color: #9b94944d;
+
+  border-radius: 5px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+}
+
+.QuienesSomos2,
+.QuienesSomos3 {
+  background-color: #967a6e80;
+}
+
+/* Estilos adicionales para QuienesSomos2 y QuienesSomos3 */
+.QuienesSomos2,
+.QuienesSomos3 {
+  margin-top: 10px;
+}
+
+.tituloQuienesSomos {
+  color: #b4b4b4;
+  text-align: center;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+.carouselQuienesSomos {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.imgQuienesSomos {
+  border-radius: 5px;
+  background-size: cover;
+}
+
   
     .tituloQuienesSomos {
       color: #b4b4b4;
@@ -38,5 +53,4 @@
       border-radius: 5px;
       background-size: cover;
     }
-  }
-  
+ 

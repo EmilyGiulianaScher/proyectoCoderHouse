@@ -4,78 +4,78 @@ header {
   background-size: cover;
 }
 
-  .navbarra {
+.navbarra {
+  display: flex;
+  flex-direction: row;
+  padding: auto;
+  border-radius: 5px;
+  background-color: hwb(0 98% 2% / 0.275);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+  .logocarpi {
+    width: 13rem;
+    float: left;
+  }
+
+  .miNavimg {
+    width: 100px;
+    margin-right: 9%;
+  }
+}
+
+.miNav {
+  a {
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: .9rem;
+    position: relative;
+    float: right;
+  }
+}
+
+nav {
+  ul {
     display: flex;
-    flex-direction: row;
-    padding: auto;
-    border-radius: 5px;
-    background-color: hwb(0 98% 2% / 0.275);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-
-    .logocarpi {
-      width: 13rem;
-      float: left;
-    }
-
-    .miNavimg {
-      width: 100px;
-      margin-right: 11%;
-    }
+    gap: .5rem;
+    margin: 0;
+    padding: 0;
   }
 
-  .miNav {
-    a {
-      text-transform: uppercase;
-      color: rgb(255, 255, 255);
-      font-size: 15px;
-      position: relative;
-      float: right;
-    }
+  li {
+    display: block;
+    margin-left: 60px;
+    margin-bottom: 35px;
+    padding-top: 23px;
+    position: relative;
+    transition: 0.5s;
   }
 
-  nav {
-    ul {
-      display: flex;
-      gap: 2.5rem;
-      margin: 0;
-      padding: 0;
-    }
-
-    li {
-      display: block;
-      margin-left: 60px;
-      margin-bottom: 35px;
-      padding-top: 23px;
-      position: relative;
-      transition: 0.5s;
-    }
-
-      ul:hover li{
-        filter: blur(1px);
-      }
-    
-    
-
-    ul li:hover{
-      filter: blur(0px);
-    }
-    a:hover {
-      color: #9b9494;
-    }
-
-    a::before {
-      content: "";
-      display: block;
-      height: 5px;
-      width: 100%;
-      background-color: #412a20;
-      position: relative;
-      width: 0px;
-      transition: all ease-in-out 1000ms;
-    }
-
-    a:hover::before {
-      width: 100%;
-    }
+  ul:hover li {
+    filter: blur(1px);
   }
 
+
+
+  ul li:hover {
+    filter: blur(0px);
+  }
+
+  a:hover {
+    color: #9b9494;
+  }
+
+  a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #412a20;
+    position: relative;
+    width: 0px;
+    transition: all ease-in-out 1000ms;
+  }
+
+  a:hover::before {
+    width: 100%;
+  }
+}

@@ -1,6 +1,6 @@
 // ...  estilos del main PRODUCTOS ...
 main {
-  
+
   .NuestrosProductosTexto {
     text-align: center;
     color: #996a3e;
@@ -16,7 +16,7 @@ main {
   }
 
   .productosCajas {
-    background-color: rgb(239,227,193);
+    background-color: rgb(239, 227, 193);
     border-radius: 5px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
   }
@@ -44,6 +44,7 @@ main {
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
     color: #ffffff;
+
     &:hover {
       background-color: rgb(139, 78, 20);
       transition-duration: 0.5s;

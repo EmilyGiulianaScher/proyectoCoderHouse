@@ -95,6 +95,60 @@
   opacity: 1;
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 0 auto;
+}
+.gallery .image {
+  display: block;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  margin: 1rem 1rem 1rem 1rem;
+}
+.gallery .image img {
+  width: 100%;
+  aspect-ratio: 6/7;
+  transition: transform 0.3s;
+}
+.gallery .image:hover {
+  transform: scale(1.3);
+}
+.gallery .image:hover img {
+  transform: scale(1.1);
+}
+.gallery .image label {
+  display: block;
+  cursor: pointer;
+  position: relative;
+}
+.gallery .image label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.gallery .image label:hover::before {
+  opacity: 1;
+}
+.gallery .image:hover {
+  z-index: 2;
+  /* Añadir z-index para que el contenedor se superponga sobre los demás */
+}
+@media (max-width: 300px) {
+  .gallery .image {
+    grid-column: span 2;
+  }
+}
+
 header {
   background-image: url(imagenes/imagenmejoradaheader.jpg);
   background-position: center;
@@ -115,20 +169,20 @@ header {
 }
 .navbarra .miNavimg {
   width: 100px;
-  margin-right: 11%;
+  margin-right: 9%;
 }
 
 .miNav a {
   text-transform: uppercase;
   color: rgb(255, 255, 255);
-  font-size: 15px;
+  font-size: 0.9rem;
   position: relative;
   float: right;
 }
 
 nav ul {
   display: flex;
-  gap: 2.5rem;
+  gap: 0.5rem;
   margin: 0;
   padding: 0;
 }
@@ -185,17 +239,34 @@ footer .copy {
   margin-left: 2%;
 }
 
+body button {
+  background-color: rgb(190, 100, 38);
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  border-style: none;
+}
+body button:hover {
+  background-color: rgb(150, 68, 13);
+  color: rgb(239, 227, 193);
+  transition-property: all;
+  transition-duration: 50ms;
+  transition-timing-function: ease-in-out;
+}
+
 /* CARRUSEL */
 .miCarro {
   max-width: 1200px;
-  margin: auto; /* Centrar el carrusel horizontalmente */
+  margin: auto;
+  /* Centrar el carrusel horizontalmente */
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
   border-bottom: 10px;
 }
 .miCarro .carousel-inner img {
   width: 100%;
   max-height: 325px;
-  object-fit: cover; /* Ajustar la imagen manteniendo la proporción */
+  object-fit: cover;
+  /* Ajustar la imagen manteniendo la proporción */
   border-radius: 5px;
 }
 
@@ -203,12 +274,19 @@ footer .copy {
   max-height: 90px;
 }
 
-.textShadowTitulo, .textShadow {
+.textShadowTitulo,
+.textShadow {
   background-color: rgba(115, 60, 24, 0.452);
   color: rgb(239, 227, 193);
   text-decoration: solid;
   border-radius: 5px;
   margin-bottom: 2px;
+}
+@media screen and (max-width: 588px) {
+  .textShadowTitulo,
+  .textShadow {
+    font-size: 12px;
+  }
 }
 
 .carruselBoton {
@@ -381,35 +459,54 @@ body {
 
 .cajaQuienesSomos {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: space-evenly;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
   gap: 15px;
 }
-.cajaQuienesSomos .QuienesSomos1 {
+
+.QuienesSomos {
   background-color: rgba(155, 148, 148, 0.3019607843);
-  color: #FFF;
   border-radius: 5px;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
 }
-.cajaQuienesSomos .QuienesSomos2 {
+
+.QuienesSomos2,
+.QuienesSomos3 {
   background-color: rgba(150, 122, 110, 0.5019607843);
 }
-.cajaQuienesSomos .QuienesSomos3 {
-  background-color: rgba(150, 122, 110, 0.5019607843);
-}
-.cajaQuienesSomos .QuienesSomos4 {
-  background-color: rgba(182, 108, 12, 0.662745098);
+
+/* Estilos adicionales para QuienesSomos2 y QuienesSomos3 */
+.QuienesSomos2,
+.QuienesSomos3 {
   margin-top: 10px;
 }
-.cajaQuienesSomos .tituloQuienesSomos {
+
+.tituloQuienesSomos {
   color: #b4b4b4;
   text-align: center;
   text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
 }
-.cajaQuienesSomos .carouselQuienesSomos {
+
+.carouselQuienesSomos {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
-.cajaQuienesSomos .imgQuienesSomos {
+
+.imgQuienesSomos {
+  border-radius: 5px;
+  background-size: cover;
+}
+
+.tituloQuienesSomos {
+  color: #b4b4b4;
+  text-align: center;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+.carouselQuienesSomos {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.imgQuienesSomos {
   border-radius: 5px;
   background-size: cover;
 }
