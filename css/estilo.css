@@ -427,13 +427,13 @@ main .col button:hover {
   text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.281);
   margin-bottom: 0;
 }
-@media (min-width: 992px) {
+@media (min-width: 801px) {
   .testimonios .row-cols-md-3 {
     flex-wrap: nowrap;
   }
 }
-@media (min-width: 504px) and (max-width: 650px) {
-  .testimonios .row-cols-md-3 {
+@media (min-width: 368px) and (max-width: 800px) {
+  .testimonios .row-cols-md-1 {
     flex-wrap: wrap;
   }
   .testimonios .col {

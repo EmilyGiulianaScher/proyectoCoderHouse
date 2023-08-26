@@ -44,15 +44,14 @@
   }
 
   // Estilos para pantallas grandes
-  @media (min-width: 992px) {
+  @media (min-width: 801px) {
     .row-cols-md-3 {
       flex-wrap: nowrap;
     }
   }
-
-  // Estilos para pantallas medianas
-  @media (min-width: 504px) and (max-width: 650px) {
-    .row-cols-md-3 {
+ 
+  @media (min-width: 368px) and (max-width: 800px) {
+    .row-cols-md-1 {
       flex-wrap: wrap;
     }
 
