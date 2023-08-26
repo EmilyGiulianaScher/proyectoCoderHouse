@@ -1,89 +1,108 @@
 /* css de los testimonios*/
 .testimonios {
-    text-align: center;
-    margin-bottom: 20px;
-background-color: rgb(190,100,38);
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: rgb(190, 100, 38);
+  padding: 1rem 1rem 1rem 1rem;
 
-    .testimonio-card {
-      padding: 20px;
-      border: 2px solid #ccc;
-      border-radius: 10px;
-      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
-      margin-bottom: 30px;
-      background-color: rgb(239,227,193);
-      
-      img {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        margin: auto 10px;
-        display: block;
-      }
+  .testimonio-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinear horizontalmente en el centro */
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    
+    background-color: rgb(239, 227, 193);
 
-      .testimonio-texto {
-        font-style: italic;
-        font-size: 16px;
-        line-height: 1.6;
-        color: #555;
-      }
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6),
+      /* Sombra externa */ inset 0px 0px 8px rgba(0, 0, 0, 0.6); /* Sombra interna */
 
-      .testimonio-nombre {
-        font-weight: bold;
-        color: #333;
-      }
-    }
-
-    // Estilos para pantallas grandes
-    @media (min-width: 992px) {
-      .row-cols-md-3 {
-        flex-wrap: nowrap;
-      }
-    }
-
-    // Estilos para pantallas medianas
-    @media (min-width: 504px) and (max-width: 650px) {
-      .row-cols-md-3 {
-        flex-wrap: wrap;
-      }
-
-      .col {
-        flex-basis: 100%;
-        max-width: 100%;
-      }
-    }
-
-    // Estilos para el título de los testimonios
-    .testimonios-titulo {
-      text-align: center;
-      font-size: 20px;
-      font-weight: bold;
-      color: #333;
-      margin-bottom: 20px;
-    }
-
-    // Estilos para las fotos de perfil
     img {
       width: 80px;
       height: 80px;
-      justify-content: center;
       border-radius: 50%;
-      margin: 0 auto 10px;
+      margin: auto 10px;
       display: block;
-      border: 3px solid #fff;
-      box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.2);
-      transition: all 0.3s ease;
-
-      &:hover {
-        transform: scale(1.1);
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
-      }
     }
 
-    // Estilos para pantallas medianas y más grandes
-    @media (min-width: 768px) {
-      img {
-        width: 100px;
-        height: 100px;
-      }
+    .testimonio-texto {
+      font-style: italic;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .testimonio-nombre {
+      font-weight: bold;
+      color: #333;
+      text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.281);
+      margin-bottom: 0;
     }
   }
+
+  // Estilos para pantallas grandes
+  @media (min-width: 992px) {
+    .row-cols-md-3 {
+      flex-wrap: nowrap;
+    }
+  }
+
+  // Estilos para pantallas medianas
+  @media (min-width: 504px) and (max-width: 650px) {
+    .row-cols-md-3 {
+      flex-wrap: wrap;
+    }
+
+    .col {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
+
+  // Estilos para el título de los testimonios
+  .testimonios-titulo {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1d1d1d;
+    margin-bottom: 2rem;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.397);
+  }
+
+  // Estilos para las fotos de perfil
+  img {
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: block;
+    border: 2px solid #fff;
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  // Estilos para pantallas medianas y más grandes
+  @media (min-width: 768px) {
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+.estrellas {
+  font-size: 24px;
+  color: #ffd700; /* Color dorado para las estrellas */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.514);
+  padding-top: 0px;
+  margin-top: 0px;
+}

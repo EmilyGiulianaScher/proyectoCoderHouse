@@ -1,56 +1,68 @@
-.cajaQuienesSomos {
+.sobre-nosotros {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  justify-content: center;
-  gap: 15px;
-}
-
-.QuienesSomos {
-  background-color: #9b94944d;
-
-  border-radius: 5px;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
-}
-
-.QuienesSomos2,
-.QuienesSomos3 {
-  background-color: #967a6e80;
-}
-
-/* Estilos adicionales para QuienesSomos2 y QuienesSomos3 */
-.QuienesSomos2,
-.QuienesSomos3 {
-  margin-top: 10px;
-}
-
-.tituloQuienesSomos {
-  color: #b4b4b4;
-  text-align: center;
-  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
-}
-
-.carouselQuienesSomos {
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-.imgQuienesSomos {
-  border-radius: 5px;
-  background-size: cover;
-}
-
+  grid-template-columns: repeat(3, 1fr); /* Cambio a 3 columnas */
+  grid-gap: 20px;
+  padding: 40px;
+  background-color: rgb(180, 98, 44);
   
-    .tituloQuienesSomos {
-      color: #b4b4b4;
-      text-align: center;
-      text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+
+    h2, h3 {
+      margin-top: 0;
     }
+
+    &:nth-child(odd) {
+      background-color: #f0f0f0;
+    }
+  }
+
+  .map-section {
+    grid-column: 1 / span 1;
+    padding: 0;
+    box-shadow: none;
+    background-color: transparent;
+
+    iframe {
+      width: 100%;
+      height: 15rem;
+      border: none;
+    }
+  }
+
+  // Definición de áreas
+  grid-template-areas:
+    "welcome welcome welcome"
+    "design design mission"
+    "location map map"
+    "location map map";
   
-    .carouselQuienesSomos {
-      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-    }
-  
-    .imgQuienesSomos {
-      border-radius: 5px;
-      background-size: cover;
-    }
- 
+    
+  // Asignación de áreas a las secciones
+  .section1 { grid-area: welcome; }
+  .section2 { grid-area: design; }
+  .section3 { grid-area: mission; }
+  .section4 { grid-area: location; }
+  .map-section { grid-area: map; }
+}
+
+@media (max-width: 768px) {
+  .sobre-nosotros {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "welcome"
+      "design"
+      "mission"
+      "location"
+      "map";
+  }
+}
+.delay {
+  animation-delay: 0.3s; 
+}

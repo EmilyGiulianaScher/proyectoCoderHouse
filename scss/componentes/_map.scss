@@ -1,10 +1,12 @@
 .googleMap {
   background-color: rgb(179, 142, 108);
   border-radius: 10px;
+  box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.651);
 
   .mapTxt {
     justify-content: center;
     color: azure;
     text-align: center;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.616);
   }
 }
