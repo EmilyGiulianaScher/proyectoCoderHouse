@@ -1,5 +1,19 @@
 @import "../scss/paginas/contacto","../scss/paginas/tapiceria","../scss/paginas/productos", "../scss/layoutDiseño/header","../scss/layoutDiseño/footer", "../scss/componentes/botones","../scss/componentes/carrusel","../scss/componentes/cards","../scss/componentes/map","../scss/componentes/whastappBoton","../scss/componentes/testimonios","../scss/layoutDiseño/main", "../scss/layoutDiseño/body", "../scss/componentes/quienesomos","../scss/componentes/contacto";
 
 
+ 
+.Dueño{
+    margin: 1.5rem;
+    text-align: left; 
+    font-weight:bold; 
+    font-size: 30px; 
+    color: #EBD758; 
+    text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68;
 
-    
+    animation-duration: 1s; 
+    animation-delay: .4s; 
+
+    h1{
+        text-align: center;
+    }
+}
